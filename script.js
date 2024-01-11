@@ -15,6 +15,7 @@ let totalImages = 0;
 let ready = false;
 
 
+
 // Helper func to check if images loaded
 
 function imageLoaded(){
