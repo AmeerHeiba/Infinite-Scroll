@@ -59,10 +59,30 @@ function displayPhotos() {
             alt: photo.alt_description,
             title: photo.alt_description
         });
+        
+        const LikeDiv = document.createElement("div");
+        LikeDiv.classList.add("likeDiv");
 
+        const likesTxt = document.createElement("h6");
+        likesTxt.innerText = photo.likes;
+
+
+        const likesCount = document.createElement("img");
+        likesCount.style.height = "20px";
+        likesCount.style.width= "20px";
+        likesCount.src = "likes.svg";
+        likesCount.title = photo.likes;
+        
+        
         item.appendChild(image);
+        LikeDiv.appendChild(likesCount);
+        LikeDiv.appendChild(likesTxt);
+        item.appendChild(LikeDiv);
         imageContainer.appendChild(item);
         image.addEventListener('load', imageLoaded);
+
+      
+       
     })
 }
 

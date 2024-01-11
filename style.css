@@ -51,7 +51,21 @@ body {
 .imagecontainer img{
   width:100%;
   margin-top: 5px;
+  border-radius: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
 }
+
+.likeDiv{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+
+}
+
 
 /*Media Query : Large Smart Phone */ 
 
